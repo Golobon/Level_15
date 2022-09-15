@@ -13,13 +13,7 @@ public class Solution_4 {
             obj.method1();
             obj.method2();
             obj.method3();
-        } catch (NumberFormatException e) {
-            System.out.println(e);
-            printStack(e);
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println(e);
-            printStack(e);
-        } catch (NullPointerException e) {
+        } catch (RuntimeException e) {
             System.out.println(e);
             printStack(e);
         }
